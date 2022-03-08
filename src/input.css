@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-button{
+    background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%);
+    box-shadow: 0px 4px 15px #67DCDA;
+    color: white;
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    left: 600px;
+    top: 540px;
+    font-size: 22pt;
+}

@@ -612,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-items-center {
   justify-items: center;
 }
@@ -695,13 +699,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.pt-\[calc\(20vh\+20px\)\] {
+  padding-top: calc(20vh + 20px);
+}
+
+.pb-\[55px\] {
+  padding-bottom: 55px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-poppins {
+  font-family: "Poppins";
+}
+
+.font-righteous {
+  font-family: "Righteous";
 }
 
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-xs {
@@ -766,6 +795,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.primary-button{
+  background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%);
+  box-shadow: 0px 4px 15px #67DCDA;
+  color: white;
+  position: absolute;
+  width: 250px;
+  height: 70px;
+  left: 600px;
+  top: 540px;
+  font-size: 22pt;
 }
 
 .hover\:bg-indigo-600:hover {

@@ -520,6 +520,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -725,17 +729,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-7xl {
-  font-size: 5rem;
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-2xl {
@@ -750,6 +750,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-mainsize {
+  font-size: 5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -782,14 +791,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-600 {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-indigo-500 {
+.text-\[\#6FEEEC\] {
   --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
+  color: rgb(111 238 236 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -797,16 +806,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-indigo-500 {
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+
 .primary-button{
   background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%);
   box-shadow: 0px 4px 15px #67DCDA;
   color: white;
-  position: absolute;
+  margin-top: 25px;
   width: 250px;
   height: 70px;
-  left: 600px;
-  top: 540px;
   font-size: 22pt;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.primary-button:hover {
+  opacity: 1
 }
 
 .hover\:bg-indigo-600:hover {

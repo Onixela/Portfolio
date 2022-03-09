@@ -6,10 +6,20 @@
     background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%);
     box-shadow: 0px 4px 15px #67DCDA;
     color: white;
-    position: absolute;
+    margin-top: 25px;
     width: 250px;
     height: 70px;
-    left: 600px;
-    top: 540px;
     font-size: 22pt;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+
+
+
 }
+
+.primary-button:hover {opacity: 1}

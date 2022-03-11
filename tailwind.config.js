@@ -4,10 +4,10 @@ module.exports = {
     extend: {
       fontSize: {
         '5xl': '3rem',
-        '6xl': '4rem',
-        'mainsize': '5rem',
+        'mainsize': '4rem',
 
 },
+
       fontFamily: {
 
         'righteous':['"Righteous"'],

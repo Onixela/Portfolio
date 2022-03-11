@@ -15,19 +15,20 @@
 </head>
 <body class="font-poppins">  
     <!-- TOP Menu -->
-    <header class="bg-white fixed top-0 px-24 grid grid-cols-3 justify-items-center h-12 items-center">
+    <header class="bg-white sticky top-0 px-24 grid grid-cols-3 justify-items-center h-12 items-center">
         
         <h1 class="text-3xl font-bold">Onixela</h1>
         <ul class="flex flex-row gap-x-4 font-semibold uppercase">
-            <li>Home</li>
-            <li>About</li>
+            <li><a href="#photo">Home</a></li>
+            <li><a href="#About">About</a></li>
             <li>Services</li>
             <li>Portfolio</li>
             <li>Contact</li>
         </ul>
-    <div class="flex flex-row gap-x-2">
-        <img class="w-6 h-6" src="../assets/images/telegram.svg"/>
-        <img class="w-6 h-6" src="../assets/images/facebook.svg"/>
+    <div class="flex flex-row gap-x-1">
+        <a href="tg://resolve?domain=xelae1"><img class="w-9 h-9" src="../assets/images/telegram.svg"/></a>
+        <a href="https://www.facebook.com/lazarev.onixela" target="_blank"><img class="w-9 h-9" src="../assets/images/facebook.svg"/></a>
+        <a href="https://www.instagram.com/onixela/" target="_blank"><img class="w-[42px] h-[42px] pb-1 pr-1" src="../assets/images/instagram.svg"/></a>
 </div>
 
 <!-- 
@@ -48,87 +49,111 @@
 
 
 <!-- Первая секция -->
-<section class="font-righteous flex flex-col items-center h-screen bg-center bg-cover" 
+<section id="photo" class="font-righteous flex flex-col items-center h-screen bg-center bg-cover" 
 style="background-image: url(../assets/images/background.jpg)">
 
 <div class="flex flex-col justify-between text-center pt-[calc(20vh+20px)] pb-[55px]">
-    <h1 class="text-white text-mainsize">Hi, I'am freelancer front-end developer!</h1>
-      <a class="text-white text-4xl mb-10">based in Estonia, Tallinn</a>
+    <h1 class="text-white w-[700px] text-mainsize">Hi, I'am freelancer front-end developer!</h1>
+      <a class="text-white text-2xl mb-10">based in Estonia, Tallinn</a>
       <button class="primary-button">View my works</button>
 </div>
 </section>
 
 <!-- Вторая секция -->
- <!-- <div class=grid-cols-3	>
-                <button class="primary-button">About Me</button>
-                <p>Know Me More</p>
-                .primary-button{
-    background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%);
-    box-shadow: 0px 4px 15px #67DCDA;
-    color: white;
-    position: absolute;
-    width: 135px;
-    height: 43px;
-    left: 635px;
-    top: 910px;
-    margin-top: 5em;
-}
-            </div> -->
+
             <section class="text-black font-poppins">
                 <div class="container px-5 py-24 mx-auto">
                   <div class="flex flex-col text-center w-full mb-20">
                     <div class="background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%)">   
-                    <h2 class="text-l text-[#6FEEEC] tracking-widest font-medium title-font mb-1">About Me</h2>
+                    <h2 id="About" class="primary">About Me</h2>
                     </div>
 
-                    <h1 class="sm:text-3xl text-2xl font-semibold title-font mb-4 text-gray-900">Know Me More</h1>
+                    <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font mb-4 text-gray-900">Know Me More</h1>
                     <div class="lg:w-2/3 mx-auto leading-relaxed text-2xl">
-                    <p class="font-semibold">Hi, I'm Alexandr Lazarev</p>
-                     <p>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. </p>
+                    <p>Hi, I'm <span class="font-semibold underline decoration-[#6FEEEC]">Alexandr Lazarev</span><br>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. </p>
                     </div>
                   </div>
                   <div class="flex flex-wrap">
                     <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-                      <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                      <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                          <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
+                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Name:</h2>
+                      <p class="leading-relaxed text-base mb-4">Alexandr Lazarev</p>
+  
                       </a>
                     </div>
                     <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
-                      <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                      <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                          <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
+                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Email:</h2>
+                      <p class="leading-relaxed text-base mb-4 hover:underline decoration-[#6FEEEC] hover:font-semibold"><a href="mailto:lazarev.alexino@gmail.com?subject=We Want To Hire You!">lazarev.alexino@gmail.com</a></p>
+                      
                       </a>
                     </div>
                     <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Neptune</h2>
-                      <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                      <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                          <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-                      <p class="leading-relaxed text-base mb-4">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                      <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                          <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                </div>
-              </section>
+                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Date Of Birth:</h2>
+                      <p class="leading-relaxed text-base mb-4">10.06.1997</p>
 
+                      </a>
+                    </div>
+                    <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">From:</h2>
+                      <p class="leading-relaxed text-base mb-4">Estonia, Tallinn</p>
+
+                      </a>
+                    </div>
+                 
+              </section>
+<!-- Третья секция -->
+    <section class="text-gray-900 font-poppins bg-[#EDEDED]">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+            <div class="background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%)">   
+              <h2 id="WhatIDo" class="primary">What I Do?</h2>
+              </div>
+              <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font -mb-10 text-gray-900">How I Can Help With Your Next Project</h1>
+            </div>
+                  <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                      <div class="border border-gray-200 p-6 rounded-lg">
+                    <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/icons8-html-5.svg"/></div>              
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Html5</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                      <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/icons8-css3.svg"/></div>  
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">CSS</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                      <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/bootstrap.svg"/></div>
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Bootstrap</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                      <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/photoshop.svg"/></div>
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Photoshop</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                      <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/figma.svg"/></div>
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Figma</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-1/3 md:w-1/2 p-4">
+                      <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/tailwind-css.svg"/></div>
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Tailwindcss</h2>
+                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                      </div>
+                    </div>
+                  
+              </section>
 
 
 </body>

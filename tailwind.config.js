@@ -1,21 +1,17 @@
 module.exports = {
-  content: ["./src/*.{html,js}"],
+  content: ['./src/*.{html,js}'],
   theme: {
     extend: {
       fontSize: {
         '5xl': '3rem',
-        'mainsize': '4rem',
-
-},
+        mainsize: '4rem',
+      },
 
       fontFamily: {
-
-        'righteous':['"Righteous"'],
-        'poppins':['"Poppins"'],
-      }
-
+        righteous: ['"Righteous"'],
+        poppins: ['"Poppins"'],
+      },
     },
   },
   plugins: [],
 }
-

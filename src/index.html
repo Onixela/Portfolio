@@ -15,34 +15,43 @@
 </head>
 <body class="font-poppins">  
     <!-- TOP Menu -->
-    <header class="bg-white sticky top-0 px-24 grid grid-cols-3 justify-items-center h-12 items-center">
-        
-        <h1 class="text-3xl font-bold">Onixela</h1>
-        <ul class="flex flex-row gap-x-4 font-semibold uppercase">
-            <li><a href="#photo">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+    <header class="bg-white sticky top-0 px-24 md:px-12 grid grid-cols-3 justify-items-center h-12 items-center z-10">
+        <!-- Logo -->
+        <h1 class="text-3xl font-bold">Portfolio</h1>
+
+        <!-- Primary Navigation -->
+        <ul class="hidden md:flex flex-row gap-x-4 font-semibold uppercase">
+            <li class="hover:text-[#6feeec]"><a href="#photo">Home</a></li>
+            <li class="hover:text-[#6feeec]"><a href="#About">About</a></li>
+            <li class="hover:text-[#6feeec]"><a href="#WhatIDo">Services</a></li>
+            <li class="hover:text-[#6feeec]"><a href="#portfolio">Portfolio</a></li>
+            <li class="hover:text-[#6feeec]"><a href="#contact">Contact</a></li>
         </ul>
-    <div class="flex flex-row gap-x-1">
+
+        <!-- Social Networks -->
+    <div class="hidden md:flex flex-row gap-x-1">
         <a href="tg://resolve?domain=xelae1"><img class="w-9 h-9" src="../assets/images/telegram.svg"/></a>
         <a href="https://www.facebook.com/lazarev.onixela" target="_blank"><img class="w-9 h-9" src="../assets/images/facebook.svg"/></a>
         <a href="https://www.instagram.com/onixela/" target="_blank"><img class="w-[42px] h-[42px] pb-1 pr-1" src="../assets/images/instagram.svg"/></a>
 </div>
 
-<!-- 
- FOR MOBILE
-<nav>
-    <button >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
 
-    </button>
+ <!-- FOR MOBILE -->
 
-</nav>
- -->
+ <!-- Mobile button goes Here -->
+<div class="md:hidden grid items-end"> 
+  mobile thing goes here
+</div>
+<!-- </div>
+ <div>
+   <a href="#" class="block">Home</a>
+   <a href="#" class="block">About</a>
+   <a href="#" class="block">Services</a>
+   <a href="#" class="block">Portfolio</a>
+   <a href="#" class="block">Contact</a>
+ </div> --> 
+
+
 
 
 </header>
@@ -54,47 +63,51 @@ style="background-image: url(../assets/images/background.jpg)">
 
 <div class="flex flex-col justify-between text-center pt-[calc(20vh+20px)] pb-[55px]">
     <h1 class="text-white w-[700px] text-mainsize">Hi, I'am freelancer </h1>
-    <h1 id="text" class= "text-white w-[700px] text-mainsize"></h1>
+    <div class="inline-block">
+      <div class="inline-block">
+        <span id="text" class="text-white text-mainsize"></span>
+      </div>
+      <span id="cursor" class="text-white text-mainsize">|</span>
+    </div>
       <a class="text-white text-2xl mb-10">based in Estonia, Tallinn</a>
-      <button class="primary-button">View my works</button>
+      <a href="#portfolio"><button class="primary-button">View my works</button></a>
 </div>
 </section>
 
 <!-- Вторая секция -->
 
-            <section class="text-black font-poppins">
-                <div class="container px-5 py-24 mx-auto">
-                  <div class="flex flex-col text-center w-full mb-20">
-                    <div class="background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%)">   
-                    <h2 id="About" class="primary">About Me</h2>
-                    </div>
-
-                    <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font mb-4 text-gray-900">Know Me More</h1>
-                    <div class="lg:w-2/3 mx-auto leading-relaxed text-2xl">
-                    <p>Hi, I'm <span class="font-semibold underline decoration-[#6FEEEC]">Alexandr Lazarev</span><br>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. </p>
-                    </div>
-                  </div>
-                  <div class="flex flex-wrap">
-                    <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Name:</h2>
+<section id="About" class="text-black font-poppins">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <div class="background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%)">   
+        <h2 class="primary">About Me</h2>
+      </div>
+        <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font mb-4 text-gray-900">Know Me More</h1>
+          <div class="lg:w-2/3 mx-auto leading-relaxed text-2xl">
+            <p>Hi, I'm <span class="font-semibold underline decoration-[#6FEEEC]">Alexandr Lazarev</span><br>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. </p>
+          </div>
+      </div>
+          <div class="flex flex-wrap">
+          <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+          <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Name</h2>
                       <p class="leading-relaxed text-base mb-4">Alexandr Lazarev</p>
   
                       </a>
                     </div>
                     <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Email:</h2>
+                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Email</h2>
                       <p class="leading-relaxed text-base mb-4 hover:underline decoration-[#6FEEEC] hover:font-semibold"><a href="mailto:lazarev.alexino@gmail.com?subject=We Want To Hire You!">lazarev.alexino@gmail.com</a></p>
                       
                       </a>
                     </div>
                     <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Date Of Birth:</h2>
+                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Date Of Birth</h2>
                       <p class="leading-relaxed text-base mb-4">10.06.1997</p>
 
                       </a>
                     </div>
                     <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">From:</h2>
+                      <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">From</h2>
                       <p class="leading-relaxed text-base mb-4">Estonia, Tallinn</p>
 
                       </a>
@@ -102,12 +115,10 @@ style="background-image: url(../assets/images/background.jpg)">
                  
               </section>
 <!-- Третья секция -->
-    <section class="text-gray-900 font-poppins bg-[#EDEDED]">
-          <div class="container px-5 py-24 mx-auto">
+    <section id="WhatIDo" class="text-gray-900 font-poppins bg-[#EDEDED]">
+          <div class="container px-5 py-24 mx-auto"> 
             <div class="flex flex-col text-center w-full mb-20">
-            <div class="background: linear-gradient(258.99deg, #6FEEEC -4.34%, #66DAD8 60.7%)">   
-              <h2 id="WhatIDo" class="primary">What I Do?</h2>
-              </div>
+              <h2 class="primary">What I Do?</h2>
               <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font -mb-10 text-gray-900">How I Can Help With Your Next Project</h1>
             </div>
                   <div class="flex flex-wrap -m-4">
@@ -153,9 +164,204 @@ style="background-image: url(../assets/images/background.jpg)">
                         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
                       </div>
                     </div>
+                    </div>
+                    </div>
+                    </section>
                   
-              </section>
+<!-- Портфолио секция -->            
+<section id="portfolio" class="text-gray-900 font-poppins bg-white">
+  <div class="container px-5 pt-24 pb-8 mx-auto"> 
+    <div class="flex flex-col text-center w-full mb-10">
+      <h2 class="primary">Portfolio</h2>
+      <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font text-gray-900">My Recent Projects</h1>
+    </div>
+    <div class="grid justify-items-center items-center">
+      <nav>
+<ul class="flex flex-row gap-x-4 list">
+  <li data-f="all" class="list_item activeline">All CATegories</li>
+  <li data-f="design" class="list_item">Design</li>
+  <li data-f="photo" class="list_item">Photography</li>
+  <li data-f="coding" class="list_item">Coding</li>
+</ul>
+</nav>
+</div>
+</div>
 
+          <div class="flex flex-wrap -m-4 px-5 mb-20">
+            <div class="xl:w-1/3 md:w-1/2 p-4 box design">
+              <div class="hover-text-one">
+                <figure class="relative w-full block effect-text-three">
+                  <img src="../assets/images/IMG_3965.jpg" alt=""></img>
+                    <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                      <h3>Design</h3>
+                        <p>Котик Лео</p>
+                    </figcaption>
+                </figure>
+              </div>
+            </div>
+            
+      
+           
+              <div class="xl:w-1/3 md:w-1/2 p-4 box design">
+                <div class="hover-text-one">
+                  <figure class="relative w-full block effect-text-three">
+                    <img src="../assets/images/IMG_3965.jpg" alt=""></img>
+                      <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                        <h3>Design</h3>
+                          <p>Котик Лео</p>
+                      </figcaption>
+                  </figure>
+                </div>
+                </div>
+              
+
+                <div class="xl:w-1/3 md:w-1/2 p-4 box photo">
+                  <div class="hover-text-one">
+                    <figure class="relative w-full block effect-text-three">
+                      <img src="../assets/images/IMG_3965.jpg" alt=""></img>
+                        <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                          <h3>Photography</h3>
+                            <p>Котик Лео</p>
+                        </figcaption>
+                    </figure>
+                  </div>
+                  </div>
+
+                  <div class="xl:w-1/3 md:w-1/2 p-4 box photo">
+                    <div class="hover-text-one">
+                      <a href="">
+                      <figure class="relative w-full block effect-text-three">
+                        <img src="../assets/images/IMG_3965.jpg" alt=""></img>
+                          <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                            <h3>Photography</h3>
+                              <p>Котик Лео</p>
+                          </figcaption>
+                      </figure>
+                    </a>
+                    </div>
+                    </div>
+
+                    <div class="xl:w-1/3 md:w-1/2 p-4 box coding">
+                      <div class="hover-text-one">
+                        <a href="https://onixela.github.io/Javascript-Projects/"> 
+                        <figure class="relative w-full block effect-text-three">
+                          <img src="../assets/images/works2.png" alt=""></img>
+                            <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                              <h3>Javascript</h3>
+                                <p>Four small interactive projects</p>
+                            </figcaption>
+                        </figure>
+                      </a>
+                      </div>
+                      </div>
+
+                      <div class="xl:w-1/3 md:w-1/2 p-4 box coding">
+                        <div class="hover-text-one">
+                          <a href="https://onixela.github.io/Aim-Test/">
+                          <figure class="relative w-full block effect-text-three">
+                            <img class="bg-auto" src="../assets/images/aimgame.png" alt=""></img>
+                              <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                                <h3>Aim Game</h3>
+                                  <p>Game On Javascript</p>
+                              </figcaption>
+                          </figure>
+                        </a>
+                        </div>
+                        </div>
+
+            </div>
+            </div>
+            </section>
+<!-- Контакт Секция -->  
+            <section id="contact" class="text-black relative bg-[#EDEDED]">
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-10">
+                  <h2 class="primary">Contact Me</h2>
+                  <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font text-gray-900">Let's get in touch</h1>
+                </div>
+                <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                  <div class="flex flex-wrap">
+                    <div class="p-2 w-1/2">
+                      <div class="relative">
+                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                        <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                      <div class="relative">
+                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                        <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      </div>
+                    </div>
+                    <div class="p-2 w-full">
+                      <div class="relative">
+                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                        <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                      </div>
+                    </div>
+                    <div class="p-2 flex flex-auto text-center justify-center">
+                      <button class="primarysend">Send</button>
+                    </div>
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                      <p class="leading-relaxed text-base mb-4 hover:underline decoration-[#6FEEEC]"><a href="mailto:lazarev.alexino@gmail.com?subject=We Want To Hire You!">lazarev.alexino@gmail.com</a></p>
+                      <p class="leading-normal my-5">Hobujaama 10-28
+                        <br>Estonia, Tallinn
+                      </p>
+                      <span class="inline-flex">
+                        <a class="text-gray-500">
+
+                        </a>
+                        <a class="ml-4 text-gray-500">
+
+                        </a>
+                        <a class="ml-4 text-gray-500">
+
+                        </a>
+                        <a class="ml-4 text-gray-500">
+
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              </div>
+            </section>
+
+<!-- Футер Секция --> 
+            <footer class="text-gray-600 body-font">
+              <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                  <img src="../assets/images/github.svg" alt="">
+                  <span class="ml-3 text-xl">Portfolio</span>
+                </a>
+                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Alexandr Lazarev —
+                  <a href="https://www.instagram.com/onixela/" class="text-gray-600 ml-1" rel="" target="_blank">@onixela</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a href="https://www.facebook.com/lazarev.onixela" class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:fill-[#6FEEEC]" viewBox="0 0 24 24">
+                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                  </a>
+                  <a href="tg://resolve?domain=xelae1" class="ml-2 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:fill-[#6FEEEC]" viewBox="0 0 24 24">
+                      <path d="M 19.976562 3.1210938 L 19.611328 3.2695312 C 19.611328 3.2695312 6.6375504 8.5740484 2.6132812 10.267578 L 2.0019531 10.525391 L 2.0019531 12.779297 L 6.9472656 14.755859 L 8.6796875 19.996094 L 10.251953 20.005859 L 12.955078 17.720703 L 16.355469 20.996094 L 18.808594 20.996094 L 21.964844 3.875 L 19.976562 3.1210938 z M 19.646484 5.4179688 L 17.146484 18.980469 L 13.044922 15.029297 L 10.224609 17.410156 L 11 14.375 L 17.28125 8 L 17.082031 7.7988281 C 17.082031 7.7988281 10.706702 11.473998 8.0019531 13.023438 L 4.5371094 11.638672 C 9.0770415 9.7455758 18.697943 5.8058761 19.646484 5.4179688 z"></path>
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/onixela/" class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:fill-[#6FEEEC]" viewBox="0 0 24 24">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                  </a>
+
+                </span>
+              </div>
+            </footer>
+            
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>

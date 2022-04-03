@@ -18,6 +18,10 @@
   margin: 0 auto;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .primary-button:hover {
   opacity: 1;
 }
@@ -178,4 +182,67 @@ figure.effect-text-three:hover p {
   border-bottom-width: 2px;
   border-style: solid;
   border-color: #6feeec;
+}
+
+/* Popup */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  background-color: white;
+  color: black;
+  max-width: 800px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: translate(0px, -100%);
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.popup__title {
+  font-size: 40px;
+  margin: 0px 0px 1em 0px;
 }

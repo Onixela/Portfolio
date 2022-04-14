@@ -1,5 +1,3 @@
-const { doc } = require('prettier')
-
 //TEXT
 const textDisplay = document.getElementById('text')
 const cursor = document.getElementById('cursor')
@@ -159,7 +157,7 @@ if (popupLinks.length > 0) {
     })
   }
 }
-
+//закрытие попапа
 const popupCloseIcon = document.querySelectorAll('.close-popup')
 if (popupCloseIcon.length > 0) {
   for (let index = 0; index < popupCloseIcon.length; index++) {
@@ -173,7 +171,7 @@ if (popupCloseIcon.length > 0) {
 
 function popupOpen(curentPopup) {
   if (curentPopup && unlock) {
-    const poupActive = document.querySelector('.popup.open')
+    const popupActive = document.querySelector('.popup.open')
     if (popupActive) {
       popupClose(popupActive, false)
     } else {
@@ -239,3 +237,5 @@ document.addEventListener('keydown', function (e) {
     popupClose(popupActive)
   }
 })
+
+//галерея

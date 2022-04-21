@@ -665,10 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 42px;
 }
 
-.w-\[700px\] {
-  width: 700px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -693,6 +689,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex: 1 1 auto;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .resize-none {
   resize: none;
 }
@@ -711,10 +711,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -741,10 +737,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .rounded {
@@ -816,10 +808,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
-.p-\[15px\] {
-  padding: 15px;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -852,6 +840,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-1 {
@@ -914,8 +907,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-mainsize {
-  font-size: 4rem;
+.text-mobile {
+  font-size: 2.8rem;
+  line-height: 4rem;
+}
+
+.text-cursor {
+  font-size: 2.8rem;
+  line-height: 4.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-2xl {
@@ -936,11 +940,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1184,7 +1183,7 @@ body.lock {
 }
 
 figure.effect-text-three {
-  background: #6feeec;
+  background: black;
 }
 
 figure.effect-text-three img {
@@ -1452,6 +1451,10 @@ div.gallery {
     margin-left: auto;
   }
 
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1478,6 +1481,16 @@ div.gallery {
     padding-left: 1rem;
   }
 
+  .sm\:text-mainsize {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1492,10 +1505,6 @@ div.gallery {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:w-full {

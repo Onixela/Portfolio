@@ -113,7 +113,7 @@ body.lock {
 }
 
 figure.effect-text-three {
-  background: #6feeec;
+  background: black;
 }
 figure.effect-text-three img {
   width: -webkit-calc(100% + 20px);

@@ -18,7 +18,7 @@
 <body class="font-poppins wrapper">  
   
     <!-- TOP Menu -->
-    <header id="header" class="bg-white sticky top-0 px-24 md:px-12 grid grid-cols-3 justify-items-center h-12 items-center z-10 lock-padding">
+    <header id="header" class="hidden sm:grid bg-white sticky top-0 px-24 md:px-12 grid-cols-3 justify-items-center h-12 items-center z-10 lock-padding">
         <!-- Logo -->
         <h1 class="text-3xl font-bold">Portfolio</h1>
 
@@ -39,24 +39,6 @@
 </div>
 
 
- <!-- FOR MOBILE -->
-
- <!-- Mobile button goes Here -->
-<div class="md:hidden grid items-end"> 
-  mobile thing goes here
-</div>
-<!-- </div>
- <div>
-   <a href="#" class="block">Home</a>
-   <a href="#" class="block">About</a>
-   <a href="#" class="block">Services</a>
-   <a href="#" class="block">Portfolio</a>
-   <a href="#" class="block">Contact</a>
- </div> --> 
-
-
-
-
 </header>
 
 
@@ -65,14 +47,14 @@
 style="background-image: url(../assets/images/background.jpg)">
 
 <div class="flex flex-col justify-between text-center pt-[calc(20vh+20px)] pb-[55px]">
-    <h1 class="text-white w-[700px] text-mainsize">Hi, I'am freelancer </h1>
+    <h1 class="pt-8 text-white text-mobile sm:text-mainsize">Hi, I'am freelancer </h1>
     <div class="inline-block">
       <div class="inline-block">
-        <span id="text" class="text-white text-mainsize"></span>
+        <span id="text" class="text-white text-mobile sm:text-mainsize"></span>
       </div>
-      <span id="cursor" class="text-white text-mainsize">|</span>
+      <span id="cursor" class="text-white text-cursor sm:text-mainsize">|</span>
     </div>
-      <a class="text-white text-2xl mb-10">based in Estonia, Tallinn</a>
+      <a class="text-xl text-white sm:text-2xl mb-10">based in Estonia, Tallinn</a>
       <a href="#portfolio"><button class="primary-button">View my works</button></a>
 </div>
 </section>
@@ -86,8 +68,9 @@ style="background-image: url(../assets/images/background.jpg)">
         <h2 class="primary">About Me</h2>
       </div>
         <h1 class="sm:text-3xl py-5 text-2xl font-semibold title-font mb-4 text-gray-900">Know Me More</h1>
-          <div class="lg:w-2/3 mx-auto leading-relaxed text-2xl">
-            <p>Hi, I'm <span class="font-semibold underline decoration-[#6FEEEC]">Alexandr Lazarev</span><br>I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. </p>
+          <div class="lg:w-2/3 mx-auto leading-relaxed text-xl sm:text-2xl">
+            <p>Hi, I'm <span class="font-semibold underline decoration-[#6FEEEC]">Alexandr Lazarev</span><br>I'm a designer & developer 
+              with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. </p>
           </div>
       </div>
           <div class="flex flex-wrap">
@@ -126,45 +109,47 @@ style="background-image: url(../assets/images/background.jpg)">
             </div>
                   <div class="flex flex-wrap -m-4">
                     <div class="xl:w-1/3 md:w-1/2 p-4">
-                      <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="p-6">
                     <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/icons8-html-5.svg"/></div>              
-                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Html5</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Html5/CSS</h2>
+                        <p class="leading-relaxed text-base">Two of the core technologies for building Web pages</p>
                       </div>
                     </div>
                     <div class="xl:w-1/3 md:w-1/2 p-4">
-                      <div class="border border-gray-200 p-6 rounded-lg">
-                        <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/icons8-css3.svg"/></div>  
-                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">CSS</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                      <div class="p-6">
+                        <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/javascript.svg"/></div>  
+                        <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Javascript</h2>
+                        <p class="leading-relaxed text-base">JavaScript is a dynamic programming language that's I use for web development, web applications and for game development.
+                        </p>
                       </div>
                     </div>
                     <div class="xl:w-1/3 md:w-1/2 p-4">
-                      <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="p-6">
                         <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/bootstrap.svg"/></div>
                         <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Bootstrap</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                        <p class="leading-relaxed text-base">Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. Bootstrap saves me from writing lots of CSS code, giving me more time to spend on designing webpages.</p>
                       </div>
                     </div>
                     <div class="xl:w-1/3 md:w-1/2 p-4">
-                      <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="p-6">
                         <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/photoshop.svg"/></div>
                         <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Photoshop</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                        <p class="leading-relaxed text-base">I use Photoshop for image editing and photo retouching. I usually use it with Adobe Lightroom.
+                        </p>
                       </div>
                     </div>
                     <div class="xl:w-1/3 md:w-1/2 p-4">
-                      <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="p-6">
                         <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/figma.svg"/></div>
                         <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Figma</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                        <p class="leading-relaxed text-base">Figma is a web-based graphics editing and user interface design app. I use it to do all kinds of graphic design work from wireframing websites, designing mobile app interfaces and prototyping designs.</p>
                       </div>
                     </div>
                     <div class="xl:w-1/3 md:w-1/2 p-4">
-                      <div class="border border-gray-200 p-6 rounded-lg">
+                      <div class="p-6">
                         <div class="flex justify-center"><img class="w-16 h-16" src="../assets/images/tailwind-css.svg"/></div>
                         <h2 class="text-lg text-center text-gray-900 font-medium title-font mb-2">Tailwindcss</h2>
-                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+                        <p class="leading-relaxed text-base">Tailwind CSS can be used to make websites in the fastest and the easiest way.</p>
                       </div>
                     </div>
                     </div>
@@ -180,7 +165,7 @@ style="background-image: url(../assets/images/background.jpg)">
     </div>
     <div class="grid justify-items-center items-center">
       <nav>
-<ul class="flex flex-row gap-x-4 list">
+<ul class="hidden md:flex flex-row gap-x-4 list">
   <li data-f="all" class="list_item activeline">All CATegories</li>
   <li data-f="design" class="list_item">Design</li>
   <li data-f="photo" class="list_item">Photography</li>
@@ -190,41 +175,102 @@ style="background-image: url(../assets/images/background.jpg)">
 </div>
 </div>
 
-          <div class="flex flex-wrap -m-4 px-5 mb-20">
+          <div class="flex flex-wrap px-5 mb-20">
+           
             <div class="xl:w-1/3 md:w-1/2 p-4 box design">
               <div class="hover-text-one">
+                <a href="#popup-6" class="popup-link">
                 <figure class="relative w-full block effect-text-three">
-                  <img src="../assets/images/IMG_3965.jpg" alt=""></img>
-                    <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
-                      <h3>Design</h3>
-                        <p>Котик Лео</p>
+                  <img src="../assets/photoshoots/lovestory/дизайн2.png" alt=""></img>
+                    <figcaption class="absolute p-4 h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                      <h3>Portfolio Design</h3>
+                        <p>Portfolio Design In Figma</p>
                     </figcaption>
                 </figure>
+              </a>
+              </div>
+              </div>
+            
+              <div id="popup-6" class="popup z-20">
+              <div class="popup__body">
+                <div class="popup__content">
+                  <a href="#header" class="popup__close close-popup cursor-pointer z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg></a>
+                  <h2 class="popup__title">Portfolio Design</h2>
+                  <div class="popup__text px-6">
+
+                    <!-- Здесь должны быть съемки -->
+
+                    <!-- Первая съемка галерея -->
+                
+                    <h1 class="">First there was a search for portfolio examples. I settled on this <a class="list_item popup-link" href="#popup-site" alt="alt">layout.</a><br>
+                      Then I immediately choose my favarite color <span class="text-[#6FEEEC]">#6FEEEC</span>.<br> I decided to keep the design minimalistic, using this color as an accent throughout the work.</h1>
+                        
+                            <img src="../assets/photoshoots/lovestory/дизайн.jpg" alt="alt">
+                        
+
+                       
+
+                  </div>
+                </div>
               </div>
             </div>
             
+            <div id="popup-site" class="popup z-20">
+              <div class="popup__body">
+                <div class="popup__content">
+                  <a href="#header" class="popup__close close-popup cursor-pointer z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg></a>
+                  
+                  <div class="popup__text">
+
+                    <!-- Здесь должны быть съемки -->
+
+                    <!-- Первая съемка галерея -->
+                
+                    
+                            <img src="../assets/photoshoots/lovestory/screen1.png" alt="alt">
+                            <img src="../assets/photoshoots/lovestory/screen2.png" alt="alt">
+                            <img src="../assets/photoshoots/lovestory/screen3.png" alt="alt">
+                            <img src="../assets/photoshoots/lovestory/screen4.png" alt="alt">
+                            <img src="../assets/photoshoots/lovestory/screen5.png" alt="alt">
+                            <img src="../assets/photoshoots/lovestory/screen6.png" alt="alt">
+                            <img src="../assets/photoshoots/lovestory/screen7.png" alt="alt">
+
+                        
+
+                       
+
+                  </div>
+                </div>
+              </div>
+            </div>
 
       
            
-              <div class="xl:w-1/3 md:w-1/2 p-4 box design">
-                <div class="hover-text-one">
-                  <figure class="relative w-full block effect-text-three">
-                    <img src="../assets/images/IMG_3965.jpg" alt=""></img>
-                      <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
-                        <h3>Design</h3>
-                          <p>Котик Лео</p>
-                      </figcaption>
-                  </figure>
-                </div>
-                </div>
+            <div class="xl:w-1/3 md:w-1/2 p-4 box design">
+              <div class="hover-text-one">
+                <a href="https://onixela.github.io/landing4/index.html">
+                <figure class="relative w-full block effect-text-three">
+                  <img src="../assets/photoshoots/lovestory/bootstrap.png" alt=""></img>
+                    <figcaption class="absolute p-4 h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                      <h3>Bootstrap</h3>
+                        <p>Landing Page Using Html/Css/Bootstrap</p>
+                    </figcaption>
+                </figure>
+              </a>
+              </div>
+              </div>
               
-
+<!-- Popup3 -->
                 <div class="xl:w-1/3 md:w-1/2 p-4 box photo">
                   <div class="hover-text-one">
                     <a href="#popup-2" class="popup-link">
                     <figure class="relative w-full block effect-text-three">
                       <img src="../assets/photoshoots/lovestory/IMG_4431.jpg" alt=""></img>
-                        <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                        <figcaption class="absolute p-4 h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
                           <h3>Photoshoot</h3>
                             <p>Individual</p>
                         </figcaption>
@@ -239,7 +285,7 @@ style="background-image: url(../assets/images/background.jpg)">
               
               <div class="popup__body">
                 <div class="popup__content">
-                  <a href="#header" class="popup__close close-popup"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <a href="#header" class="popup__close close-popup cursor-pointer z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg></a>
                   <h2 class="popup__title">Some Photoshoots</h2>
@@ -247,7 +293,7 @@ style="background-image: url(../assets/images/background.jpg)">
 
                     <!-- Здесь должны быть съемки -->
 
-                    <!-- Первая съемка Masonry галерея -->
+                    <!-- Первая съемка галерея -->
                 
                     
                         <a href="https://www.behance.net/gallery/141322291/Alex" target="_blank" class="gallery-item">
@@ -286,44 +332,85 @@ style="background-image: url(../assets/images/background.jpg)">
             </div>
 
             
-
-                  <div class="xl:w-1/3 md:w-1/2 p-4 box photo">
+<!-- Popup  E-BUSS -->
+                  <div class="xl:w-1/3 md:w-1/2 p-4 box design">
                     <div class="hover-text-one">
                       <a href="#popup" class="popup-link">
                       <figure class="relative w-full block effect-text-three">
-                        <img src="../assets/images/IMG_3965.jpg" alt=""></img>
-                          <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
-                            <h3>Попап1</h3>
-                              <p>Котик Лео</p>
+                        <img src="../assets/photoshoots/lovestory/xddesign.png" alt=""></img>
+                          <figcaption class="absolute p-4 h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                            <h3>E-Buss App</h3>
+                              <p>Design For E-Buss Application Adobe XD </p>
                           </figcaption>
                       </figure>
                     </a>
                     </div>
                     </div>
 
-                    <!-- Popup -->
+                    
             <div id="popup" class="popup z-20">
               
               <div class="popup__body">
                 <div class="popup__content">
-                  <a href="#header" class="popup__close close-popup"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      
+                  <a href="#header" class="popup__close close-popup cursor-pointer z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg></a>
-                  <div class="popup__title">Это модальное окно номер 1</div>
-                  <div class="popup__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi atque vitae nulla dolorem,
-                     ab veritatis accusantium laudantium quisquam. Eaque doloremque vel dicta porro asperiores, enim distinctio libero sint voluptatibus.
+                  <div class="popup__title">E-Buss App</div>
+                  <div class="gallery-list popup__text">
+
+
+                    <h1 class="mb-4">The problem of being able to book a seat on public transport
+                      (As a person who does not want to share seats in public transport I want to be able to book a seat.)
+                     </h1>
+                    <a href="../assets/photoshoots/lovestory/design2.png" class="image-popup-vertical-fit gallery-item">
+                      <div class="gallery-item-hover">Посмотреть</div>   
+                        <img src="../assets/photoshoots/lovestory/design2.png" alt="alt">
+                    </a>
+
+
+                    <a href="../assets/photoshoots/lovestory/design1.PNG" class="image-popup-vertical-fit gallery-item">
+                      <div class="gallery-item-hover">Посмотреть</div>   
+                        <img src="../assets/photoshoots/lovestory/design1.PNG" alt="alt">
+                    </a>
+
+
+                    <a href="https://www.youtube.com/watch?v=B0yLyvq63XM" class="gallery-item popup-youtube">
+                      <div class="gallery-item-hover">Open YouTube video</div>   
+                        <img src="../assets/photoshoots/lovestory/xddesign.png" alt="alt">
+                    </a>
+
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Попап в попапе -->
+            <div id="image" class="popup z-20">
+              
+              <div class="popup__body">
+                <div class="popup__content popup__content_image">
+      
+                  <a href="#header" class="popup__close close-popup cursor-pointer z-10"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg></a>
+                <div class="popup__image">
+                  <img src="../assets/photoshoots/lovestory/0001.jpg" alt="alt">
+                </div>
+
+                  </div>
+                </div>
+            </div>
+    
+
+
+<!-- Popup  Javascript 2tk -->
                     <div class="xl:w-1/3 md:w-1/2 p-4 box coding">
                       <div class="hover-text-one">
                         <a href="https://onixela.github.io/Javascript-Projects/"> 
                         <figure class="relative w-full block effect-text-three">
                           <img src="../assets/images/works2.png" alt=""></img>
-                            <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                            <figcaption class="absolute p-4 h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
                               <h3>Javascript</h3>
                                 <p>Four small interactive projects</p>
                             </figcaption>
@@ -337,7 +424,7 @@ style="background-image: url(../assets/images/background.jpg)">
                           <a href="https://onixela.github.io/Aim-Test/">
                           <figure class="relative w-full block effect-text-three">
                             <img class="bg-auto" src="../assets/images/aimgame.png" alt=""></img>
-                              <figcaption class="absolute p-[15px] h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
+                              <figcaption class="absolute p-4 h-full w-full top-auto left-0 bottom-0 z-10 ease-linear duration-500">
                                 <h3>Aim Game</h3>
                                   <p>Game On Javascript</p>
                               </figcaption>
@@ -349,6 +436,7 @@ style="background-image: url(../assets/images/background.jpg)">
             </div>
             </div>
             </section>
+
 <!-- Контакт Секция -->  
             <section id="contact" class="text-black relative bg-[#EDEDED]">
               <div class="container px-5 py-24 mx-auto">
@@ -438,12 +526,42 @@ style="background-image: url(../assets/images/background.jpg)">
               </div>
             </footer>
           
-
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./app.js"></script>
+<script>
+$('.gallery-list').magnificPopup({
+  delegate: 'a',
+  type:'image',
+  gallery: {
+    enabled: true
+  }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+});
+$(document).ready(function() {
+	$('.popup-youtube').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+
+$('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
+
+</script>
 
 </body>
 </html>

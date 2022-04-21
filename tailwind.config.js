@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        '5xl': '3rem',
-        mainsize: '4rem',
+        mainsize: ['4rem', { lineHeight: '5rem' }],
+        mobile: ['2.8rem', { lineHeight: '4rem' }],
+        cursor: ['2.8rem', { lineHeight: '4.5rem' }],
       },
 
       fontFamily: {

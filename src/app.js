@@ -60,21 +60,6 @@ function loop() {
 
 loop()
 
-//FILTER
-// */const filterBox = document.querySelectorAll('.box')
-
-// document.querySelector('nav').addEventListener('click', (event) => {
-//   if (event.target.tagName !== 'LI') return false
-//   let filterClass = event.target.dataset['f']
-
-//   filterBox.forEach((elem) => {
-//     elem.classList.remove('hide')
-//     if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-//       elem.classList.add('hide')
-//     }
-//   })
-// })
-
 //Filter2
 const list = document.querySelector('.list')
 items = document.querySelectorAll('.box')
@@ -230,12 +215,3 @@ function bodyUnLock() {
     unlock = true
   }, timeout)
 }
-
-document.addEventListener('keydown', function (e) {
-  if (e.which === 27) {
-    const popupActive = document.querySelector('.popup.open')
-    popupClose(popupActive)
-  }
-})
-
-//галерея
